@@ -6,8 +6,10 @@
  ![LeetCode Stats](https://leetcard.jacoblin.cool/routhkiranbabu?theme=dark&font=baloo&ext=heatmap)![](https://leetcard.jacoblin.cool/routhkiranbabu?ext=activity)
 </div>
 
+
 <div align = center width = 100%>
-  
+ 
+# 📚 Notes
 | Topic | Java | JavaScript | Python |
 | ---: | :--: | :--: | :--: |
 | `List` | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/List%20Methods/Java) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/List%20Methods/JavaScript) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/List%20Methods/Python) |
