@@ -14,3 +14,25 @@
 | ---: | :--: | :--: | :--: | :--: |
 | `List` | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/List%20Methods/Java) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/List%20Methods/JavaScript) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/List%20Methods/Python) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/blob/main/1.%20Two%20Sum/Notes/List%20Methods/Remember%20List%20Sequence.pdf) |
 </div>
+
+<details>
+<summary>📂 Folder Structure</summary>
+ 
+```mermaid
+graph LR;
+a[LeetCode] --> |Folder| b[Problem 1]
+a --> |Folder| c[Problem 2]
+a --> |Folder| d[Problem 3]
+a --> |Other Problem Folder| e[...]
+a --> |File| f[Readme]
+b --> |File| Problem.pdf
+b --> |Folder| g[Notes]
+b --> |Folder| l[Solution for java, javaScript & Python]
+g --> |Folder| h[Java]
+g --> |Folder| i[Python]
+g --> |Folder| j[JavaScript]
+h --> k[Using ChatGPT]
+i --> k
+j --> k
+```
+</details>
