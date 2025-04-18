@@ -49,3 +49,16 @@ JavaScript is a high-level, interpreted programming language primarily used to c
 7. **Rich APIs for Web Development:** JavaScript provides APIs for tasks like DOM manipulation, AJAX requests, and working with storage, canvas, geolocation, and more.
 8. **Support for Functional and Object-Oriented Programming:** Developers can use both paradigms based on their needs, making JavaScript highly versatile.
 9. **Massive Ecosystem & Community:** With libraries like React, Angular, and frameworks like Node.js, JavaScript has one of the largest ecosystems in the development world.
+# Java
+Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It was developed by Sun Microsystems (now owned by Oracle) and released in 1995. Java follows the “Write Once, Run Anywhere” (WORA) principle, which means compiled Java code can run on any platform that supports Java without the need for recompilation.
+## Key Features of Java:
+1. **Platform Independent:** Java code is compiled into bytecode which runs on the Java Virtual Machine (JVM), making it platform-independent.
+2. **Object-Oriented:** Everything in Java is treated as an object, which makes code more modular, flexible, and extensible.
+3. **Simple and Easy to Learn:** Java has a clean syntax similar to C++, but without complex features like operator overloading and multiple inheritance (with classes).
+4. **Secure:** Java provides a secure execution environment through features like bytecode verification, a security manager, and the lack of explicit pointer manipulation.
+5. **Robust:** Java emphasizes error-checking at compile-time and runtime, garbage collection, exception handling, and strong memory management.
+6. **Multithreaded:** Java has built-in support for multithreading, allowing concurrent execution of two or more threads for maximum CPU utilization.
+7. **Distributed:** Java is designed for building distributed applications with support for technologies like RMI (Remote Method Invocation) and EJB (Enterprise JavaBeans).
+8. **High Performance:** Though not as fast as C or C++, Java’s performance is impressive due to the Just-In-Time (JIT) compiler in the JVM.
+9. **Dynamic and Extensible:** Java programs can dynamically load classes, which means classes are loaded as and when needed.
+10. **Rich API and Large Ecosystem:** Java provides a vast standard library and has strong community support with frameworks like Spring, Hibernate, and tools like Maven and Jenkins.
