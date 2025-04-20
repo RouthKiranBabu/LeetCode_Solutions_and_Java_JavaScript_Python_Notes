@@ -6,15 +6,15 @@ import java.lang.reflect.Method;
 public class firstClass {
 	public static void main(String[] args) {
 		Class<?> arrayListClass = ArrayList.class;
-        // Get all declared methods
-        Method[] methods = arrayListClass.getDeclaredMethods();
-        System.out.println("All methods of ArrayList:\n");
-        int i = 1;
-        for (Method method : methods) {
-            System.out.print(i + ". " + method.getName() + ", ");
-            i += 1;
-            if (i % 10 == 0) System.out.println();
-        }
+	        // Get all declared methods
+	        Method[] methods = arrayListClass.getDeclaredMethods();
+	        System.out.println("All methods of ArrayList:\n");
+	        int i = 1;
+	        for (Method method : methods) {
+	            System.out.print(i + ". " + method.getName() + ", ");
+	            i += 1;
+	            if (i % 10 == 0) System.out.println();
+	        }
 	}
 }
 ```
