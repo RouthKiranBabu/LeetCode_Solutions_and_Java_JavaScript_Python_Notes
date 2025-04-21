@@ -1,4 +1,108 @@
 # ✅ Java Program 
+## To Print All Vector Methods:
+```java
+package Package;
+import java.lang.reflect.Method;
+import java.util.Vector;
+public class firstClass {
+	public static void main(String[] args) {
+		// Get the Vector class
+	        Class<?> vectorClass = Vector.class;
+	        // Get all declared methods in Vector class
+	        Method[] methods = vectorClass.getDeclaredMethods();
+	        System.out.println("Methods available in java.util.Vector:\n");
+	        for (Method method : methods) {
+	            // Print method name with parameter types
+	            System.out.print(method.getName() + "(");
+	            Class<?>[] parameterTypes = method.getParameterTypes();
+	            for (int i = 0; i < parameterTypes.length; i++) {
+	                System.out.print(parameterTypes[i].getSimpleName());
+	                if (i < parameterTypes.length - 1) {
+	                    System.out.print(", ");
+	                }
+	            }
+	            System.out.println(")");
+	        }
+	}
+}
+
+```
+## Output
+
+<details>
+  <summary>Show</summary>
+	
+```bash
+Methods available in java.util.Vector:
+
+remove(int)
+remove(Object)
+size()
+get(int)
+equals(Object)
+toString()
+hashCode()
+clone()
+sort(Comparator)
+indexOf(Object)
+indexOf(Object, int)
+clear()
+lastIndexOf(Object)
+lastIndexOf(Object, int)
+isEmpty()
+replaceAll(UnaryOperator)
+add(Object, Object[], int)
+add(Object)
+add(int, Object)
+subList(int, int)
+toArray()
+toArray(Object[])
+iterator()
+contains(Object)
+elements()
+spliterator()
+addAll(int, Collection)
+addAll(Collection)
+set(int, Object)
+readObject(ObjectInputStream)
+writeObject(ObjectOutputStream)
+forEach(Consumer)
+capacity()
+ensureCapacity(int)
+trimToSize()
+elementData(int)
+grow()
+grow(int)
+shiftTailOverGap(Object[], int, int)
+elementAt(int)
+elementAt(Object[], int)
+removeIf(Predicate)
+nBits(int)
+setBit(long[], int)
+isClear(long[], int)
+removeRange(int, int)
+removeAll(Collection)
+retainAll(Collection)
+listIterator(int)
+listIterator()
+checkInvariants()
+containsAll(Collection)
+bulkRemove(Predicate)
+lambda$retainAll$1(Collection, Object)
+lambda$removeAll$0(Collection, Object)
+setSize(int)
+copyInto(Object[])
+removeElementAt(int)
+removeElement(Object)
+insertElementAt(Object, int)
+removeAllElements()
+firstElement()
+lastElement()
+setElementAt(Object, int)
+addElement(Object)
+```
+</details>
+
 ## To Print All Stack Methods:
 ```java
 package Package;
