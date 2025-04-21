@@ -1,4 +1,45 @@
 # ✅ Java Program 
+## To Print All LinkedList Methods:
+```java
+package Package;
+
+import java.lang.reflect.Method;
+import java.util.LinkedList;
+public class firstClass {
+	public static void main(String[] args) {
+		// Get the LinkedList class
+	        Class<?> linkedListClass = LinkedList.class;
+	        // Get all methods of LinkedList class
+	        Method[] methods = linkedListClass.getDeclaredMethods();
+	        System.out.println("Methods available in java.util.LinkedList:\n");
+	        int i = 0;
+	        for (Method method : methods) {
+	        	i += 1;
+	            System.out.print(i + ". " + method.getName() + " ");
+	            if (i % 5 == 0) System.out.println();
+	        }
+	        System.out.println("\nTotal number of methods: " + methods.length);
+	}
+}
+```
+## Output
+```bash
+Methods available in java.util.LinkedList:
+
+1. remove 2. remove 3. remove 4. size 5. get 
+6. clone 7. indexOf 8. clear 9. lastIndexOf 10. add 
+11. add 12. toArray 13. toArray 14. contains 15. spliterator 
+16. addAll 17. addAll 18. set 19. readObject 20. writeObject 
+21. peek 22. node 23. outOfBoundsMsg 24. getFirst 25. getLast 
+26. element 27. addFirst 28. addLast 29. removeFirst 30. removeLast 
+31. listIterator 32. reversed 33. reversed 34. reversed 35. reversed 
+36. poll 37. push 38. pop 39. pollFirst 40. pollLast 
+41. offerLast 42. peekFirst 43. removeFirstOccurrence 44. offerFirst 45. peekLast 
+46. removeLastOccurrence 47. offer 48. descendingIterator 49. unlink 50. unlinkFirst 
+51. unlinkLast 52. linkFirst 53. linkLast 54. checkPositionIndex 55. checkElementIndex 
+56. linkBefore 57. isElementIndex 58. isPositionIndex 59. superClone 
+Total number of methods: 59
+```
 ## To Print All Vector Methods:
 ```java
 package Package;
