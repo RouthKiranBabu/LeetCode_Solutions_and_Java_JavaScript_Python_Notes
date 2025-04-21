@@ -1,4 +1,45 @@
-# ✅ Java Program to Print All ArrayList Methods:
+# ✅ Java Program 
+## To Print All Stack Methods:
+```java
+package Package;
+import java.lang.reflect.Method;
+import java.util.Stack;
+public class firstClass {
+	public static void main(String[] args) {
+		// Get the Stack class object
+	        Class<?> stackClass = Stack.class;
+	        // Get all methods of Stack (inherited and declared)
+	        Method[] methods = stackClass.getMethods();
+	        System.out.println("Methods available in java.util.Stack:");
+	        int i = 1;
+	        for (Method method : methods) {
+	            System.out.print(i + ". " + method.getName() + " ");
+	            if (i % 5 == 0) System.out.println();
+	            i += 1;
+	        }
+	}
+}
+```
+## Output
+```bash
+Methods available in java.util.Stack:
+1. empty 2. peek 3. search 4. push 5. pop 
+6. addElement 7. removeElementAt 8. removeElement 9. insertElementAt 10. removeAllElements 
+11. firstElement 12. lastElement 13. setElementAt 14. remove 15. remove 
+16. size 17. get 18. equals 19. toString 20. hashCode 
+21. clone 22. sort 23. indexOf 24. indexOf 25. clear 
+26. lastIndexOf 27. lastIndexOf 28. isEmpty 29. replaceAll 30. add 
+31. add 32. subList 33. toArray 34. toArray 35. iterator 
+36. contains 37. elements 38. spliterator 39. addAll 40. addAll 
+41. set 42. forEach 43. capacity 44. ensureCapacity 45. trimToSize 
+46. elementAt 47. removeIf 48. removeAll 49. retainAll 50. listIterator 
+51. listIterator 52. containsAll 53. setSize 54. copyInto 55. getClass 
+56. notify 57. notifyAll 58. wait 59. wait 60. wait 
+61. toArray 62. stream 63. parallelStream 64. getFirst 65. getLast 
+66. addFirst 67. addLast 68. removeFirst 69. removeLast 70. reversed 
+71. reversed 
+```
+## To Print All ArrayList Methods:
 ```java
 package Package;
 import java.util.ArrayList;
