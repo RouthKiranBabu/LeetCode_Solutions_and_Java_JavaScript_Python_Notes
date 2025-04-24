@@ -13,6 +13,7 @@
 | Topic | Java | JavaScript | Python |Program that Prints Method Names|
 | ---: | :--: | :--: | :--: | :--: |
 | `List` | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/List%20Methods/Java) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/List%20Methods/JavaScript) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/List%20Methods/Python) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/blob/main/1.%20Two%20Sum/Notes/List%20Methods/readme.md) |
+| `input` | [Click Here](https://github.com/RouthKiranBabu/LeetCode/blob/main/1.%20Two%20Sum/Notes/User_Input/Java/User%20Input%20Using%20Java.pdf) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/blob/main/1.%20Two%20Sum/Notes/User_Input/JavaScript/User%20Input%20Using%20JavaScript.pdf) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/blob/main/1.%20Two%20Sum/Notes/User_Input/Python/User%20Input%20Using%20Python.pdf) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/blob/main/1.%20Two%20Sum/Notes/User_Input/Code%20to%20Print%20User%20Input%20Methods.pdf) |
 </div>
 
 <details>
