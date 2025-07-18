@@ -6,39 +6,6 @@
  ![LeetCode Stats](https://leetcard.jacoblin.cool/routhkiranbabu?theme=dark&font=baloo&ext=heatmap)![](https://leetcard.jacoblin.cool/routhkiranbabu?ext=activity)
 </div>
 
-
-<div align = center width = 100%>
- 
-# 📚 Notes
-| Topic | Java | JavaScript | Python |Program that Prints Method Names|
-| ---: | :--: | :--: | :--: | :--: |
-| `User input` | [Click Here](https://github.com/RouthKiranBabu/LeetCode/blob/main/1.%20Two%20Sum/Notes/User_Input/Java/User%20Input%20Using%20Java.pdf) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/blob/main/1.%20Two%20Sum/Notes/User_Input/JavaScript/User%20Input%20Using%20JavaScript.pdf) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/blob/main/1.%20Two%20Sum/Notes/User_Input/Python/User%20Input%20Using%20Python.pdf) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/blob/main/1.%20Two%20Sum/Notes/User_Input/Code%20to%20Print%20User%20Input%20Methods.pdf) |
-| `List` | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/List%20Methods/Java) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/List%20Methods/JavaScript) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/List%20Methods/Python) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/blob/main/1.%20Two%20Sum/Notes/List%20Methods/readme.md) |
-| `Dictionary` | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/Dictionary_Methods/Java_dictionary_methods) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/Dictionary_Methods/Javascript_dictionary_methods) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/tree/main/1.%20Two%20Sum/Notes/Dictionary_Methods/Python_dictionary_methods) | [Click Here](https://github.com/RouthKiranBabu/LeetCode/blob/main/1.%20Two%20Sum/Notes/Dictionary_Methods/Code%20that%20Prints%20Dictonary%20Methods.pdf) |
-</div>
-
-<details>
-<summary>📂 Folder Structure</summary>
- 
-```mermaid
-graph LR;
-a[LeetCode] --> |Folder| b[Problem 1]
-a --> |Folder| c[Problem 2]
-a --> |Folder| d[Problem 3]
-a --> |Other Problem Folder| e[...]
-a --> |File| f[Readme]
-b --> |File| Problem.pdf
-b --> |Folder| g[Notes]
-b --> |Folder| l[Solution for java, javaScript & Python]
-g --> |Folder| h[Java]
-g --> |Folder| i[Python]
-g --> |Folder| j[JavaScript]
-h --> k[Using ChatGPT]
-i --> k
-j --> k
-```
-</details>
-
 # Javascript
 JavaScript is a high-level, interpreted programming language primarily used to create interactive and dynamic content on the web. It's one of the core technologies of the web, alongside HTML and CSS. Initially, it was designed to run in the browser, but with environments like Node.js, it's also widely used on the server side.
 ## Key Features of JavaScript:
