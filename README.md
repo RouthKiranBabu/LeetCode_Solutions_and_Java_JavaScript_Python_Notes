@@ -4,6 +4,8 @@
  
 # 📊 LeetCode Stats
  ![LeetCode Stats](https://leetcard.jacoblin.cool/routhkiranbabu?theme=dark&font=baloo&ext=heatmap)![](https://leetcard.jacoblin.cool/routhkiranbabu?ext=activity)
+
+ ## Leetcode Profile 👉 [***Click here***](https://leetcode.com/u/RouthKiranBabu/)
 </div>
 
 # Javascript
