@@ -3,12 +3,12 @@
 <div align='center' >
  
 # 📊 LeetCode Stats
+ ### Visit 👉 [***Leetcode Profile 🖼️***](https://leetcode.com/u/RouthKiranBabu/), [***Leetcode Notes 📚***](https://github.com/RouthKiranBabu/LeetCode/tree/main/Notes), and Leetcode Repository contains [***Solutions 🧪***](https://github.com/RouthKiranBabu/LeetCode/tree/main).
 <div style="display: flex; justify-content: center; gap: 20px;">
   <img src="https://leetcard.jacoblin.cool/routhkiranbabu?theme=dark&font=baloo&ext=heatmap" alt="Stat 1" style="width: 400px; height: auto;">
   <img src="https://leetcard.jacoblin.cool/routhkiranbabu?ext=activity" alt="Stat 2" style="width: 400px; height: auto;">
 </div>
 
- ## Leetcode Profile 👉 [***Click here***](https://leetcode.com/u/RouthKiranBabu/)
 </div>
 
 # Javascript
