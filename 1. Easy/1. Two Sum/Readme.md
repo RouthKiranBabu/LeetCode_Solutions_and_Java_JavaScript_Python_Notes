@@ -1,7 +1,9 @@
 <details>
     <summary>Main point</summary>
 
-     In the for loop, checks present loop value's complement exists in keys of dictionary, where key value pair are added at every loop if not exist, key is number from list and value is index where number exist in list. If yes, return the list.
+     In the for loop, checks present loop value's complement exists in keys of dictionary, 
+     where key value pair are added at every loop if not exist, key is number from list and 
+     value is index where number exist in list. If yes, return the list.
 </details>
 
 # Map in Python, Java, and JavaScript
