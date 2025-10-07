@@ -1,158 +1,86 @@
-<details>
-    <summary>Main point</summary>
+# Simple, beginner-friendly explanation (step-by-step)
 
-     In the for loop, checks present loop value's complement exists in keys of dictionary, 
-     where key value pair are added at every loop if not exist, key is number from list and 
-     value is index where number exist in list. If yes, return the list.
-</details>
-
-# Map in Python, Java, and JavaScript
-
-This guide explains how to **create a Map**, and how to **set** and **get** values in **Python, Java, and JavaScript**. Each section includes:
-
-* **Definition**
-* **Full Syntax with Explanation**
-* **Examples**
+**What the code does in one sentence:**
+Given an integer array `nums` and a `target`, it finds two different indices `i` and `j` such that `nums[i] + nums[j] == target`, and returns those two indices.
 
 ---
 
-## 📌 1. Python: Dictionary (`dict`)
+## Big idea (intuition)
 
-In Python, a **Map-like structure** is implemented using a **dictionary (`dict`)**.
-
-### Definition
-
-A dictionary in Python is an unordered collection of key-value pairs where keys must be unique and immutable.
-
-### Syntax
-
-```python
-# Creating a dictionary
-my_dict = {
-    key1: value1,
-    key2: value2,
-}
-
-# Setting a value
-my_dict[key] = value
-
-# Getting a value
-value = my_dict[key]          # Raises KeyError if key not found
-value = my_dict.get(key)      # Returns None (or default) if key not found
-```
-
-### Example
-
-```python
-# Create a dictionary
-student = {
-    "name": "Alice",
-    "age": 21
-}
-
-# Set a new value
-student["grade"] = "A"   # Adds key 'grade'
-
-# Get values
-print(student["name"])         # Output: Alice
-print(student.get("age"))      # Output: 21
-print(student.get("city", "Not Found"))  # Output: Not Found
-```
+Instead of checking every pair (which is slow), the code remembers numbers it has seen so far in a `HashMap` that maps a *value → the index where that value appears*. For each number `x` it looks for `target - x` (the *complement*). If the complement is already in the map, we found the pair.
 
 ---
 
-## 📌 2. Java: `HashMap`
+## Line-by-line (easy)
 
-In Java, a **Map** is an interface, and the most commonly used implementation is **`HashMap`**.
+1. `HashMap<Integer, Integer> map = new HashMap<>();`
 
-### Definition
+   * Create an empty map. Key = a number from the array, Value = that number’s index.
 
-A `HashMap` stores key-value pairs. Keys are unique, and values can be duplicated. It allows **null values** and one **null key**.
+2. `for (int i = 0; i < nums.length; i++) {`
 
-### Syntax
+   * Loop over each index `i` in the array.
 
-```java
-// Import
-import java.util.HashMap;
+3. `int complement = target - nums[i];`
 
-// Create a HashMap
-HashMap<KeyType, ValueType> map = new HashMap<>();
+   * Compute the number we need to add to `nums[i]` to reach `target`.
+   * Example: if `target = 9` and `nums[i] = 2`, then `complement = 9 - 2 = 7`.
 
-// Set a value
-map.put(key, value);
+4. `if (map.containsKey(complement)) { return new int[]{ map.get(complement), i }; }`
 
-// Get a value
-ValueType value = map.get(key);      // Returns null if key not found
-```
+   * If the complement is already in the map, return the stored index of the complement and the current index `i`.
+   * These two indices are the answer.
 
-### Example
+5. `map.put(nums[i], i);`
 
-```java
-import java.util.HashMap;
+   * If complement wasn’t found, store the current number with its index in the map so future numbers can match with it.
 
-public class Main {
-    public static void main(String[] args) {
-        // Create a HashMap
-        HashMap<String, Integer> scores = new HashMap<>();
+6. `return new int[]{};`
 
-        // Set values
-        scores.put("Alice", 90);
-        scores.put("Bob", 85);
+   * If the loop finishes with no result, return an empty array (no pair found).
 
-        // Get values
-        System.out.println(scores.get("Alice")); // Output: 90
-        System.out.println(scores.get("Charlie")); // Output: null
-    }
-}
-```
+**Important detail:** we check `map.containsKey(...)` **before** inserting the current number into the map. This prevents using the same element twice (e.g., returning the same index twice).
 
 ---
 
-## 📌 3. JavaScript: `Map`
+## Walkthrough example (table)
 
-In JavaScript, the **`Map` object** is used to store key-value pairs. Unlike objects, keys can be of any type.
+Array `nums = [2, 7, 11, 15]`, `target = 9`
 
-### Definition
+|  i | nums[i] | complement = target - nums[i] | Map before this iteration (value → index) | Action                                           |
+| -: | ------: | ----------------------------: | ----------------------------------------: | :----------------------------------------------- |
+|  0 |       2 |                     9 - 2 = 7 |                                     `{ }` | 7 not found → put `2→0`. Map now `{2→0}`         |
+|  1 |       7 |                     9 - 7 = 2 |                                   `{2→0}` | 2 found → return `[ map.get(2)=0, 1 ]` → `[0,1]` |
 
-A `Map` holds key-value pairs and remembers the original insertion order of the keys.
-
-### Syntax
-
-```javascript
-// Create a Map
-const myMap = new Map();
-
-// Set a value
-myMap.set(key, value);
-
-// Get a value
-let value = myMap.get(key);   // Returns undefined if key not found
-```
-
-### Example
-
-```javascript
-// Create a Map
-const student = new Map();
-
-// Set values
-student.set("name", "Alice");
-student.set("age", 21);
-
-// Get values
-console.log(student.get("name"));  // Output: Alice
-console.log(student.get("age"));   // Output: 21
-console.log(student.get("grade")); // Output: undefined
-```
+So the function returns `[0, 1]` because `nums[0] + nums[1] == 2 + 7 == 9`.
 
 ---
 
-## ✅ Summary
+## Why this is efficient
 
-| Language       | Map Structure | Set Value              | Get Value                            |
-| -------------- | ------------- | ---------------------- | ------------------------------------ |
-| **Python**     | `dict`        | `my_dict[key] = value` | `my_dict[key]` or `my_dict.get(key)` |
-| **Java**       | `HashMap`     | `map.put(key, value)`  | `map.get(key)`                       |
-| **JavaScript** | `Map`         | `map.set(key, value)`  | `map.get(key)`                       |
+* Each element is processed once → **O(n)** time (n = `nums.length`).
+* The map may store up to n entries → **O(n)** extra space.
+* Much faster than a double loop (which would be **O(n²)**).
 
-Each language has its own way of handling **maps/dictionaries**, but the concept remains the same: **store key-value pairs and retrieve them efficiently**.
+---
+
+## Edge cases & notes
+
+* Indices are **0-based** (first element has index 0).
+* Works with duplicate values (e.g., `[3,3]`, `target=6`): store first `3→0`, on second `3` you find complement 3 and return `[0,1]`.
+* If no pair exists, it returns an empty array—some problems may prefer throwing an exception or returning `null` or a fixed-size `int[2]`—adjust as needed.
+* If you put the current number into the map **before** checking, you could accidentally match the number with itself and return the same index twice (wrong). That’s why `containsKey` check happens first.
+
+---
+
+## Quick summary (cheat-sheet)
+
+* `map` stores numbers we’ve seen mapped to their index.
+* For each `x`, compute `complement = target - x`.
+* If complement exists in map → we found two indices.
+* Else store `x` in the map and continue.
+* Time: **O(n)**, Space: **O(n)**.
+
+---
+
+If you want, I can show another traced example (with duplicates or negative numbers), or rewrite the method to throw an exception when no solution exists. Which would help you learn more?
